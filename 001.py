@@ -43,4 +43,6 @@ print(name[::-1])
 print(len(name))
 
 
-
+#split name into single words
+first, last =  name.split()
+print(f"welcome: {first}")
