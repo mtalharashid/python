@@ -8,8 +8,8 @@ print("Result:", x + y)
 
 #------------- FLOAT VERSION -------------
 
-x = float(input("Enter the first number: "))
-y = float(input("Enter the second number: "))
+x = float(input("Enter the first float number: "))
+y = float(input("Enter the second float number: "))
 
 print("Result:", x + y)
 
