@@ -46,3 +46,26 @@ print(len(name))
 #split name into single words
 first, last =  name.split()
 print(f"welcome: {first}")
+
+#---------------------------------------CALL A FUNCTION TO SAY HELLO-------------------------------------
+# create a hello function and pass a name to say Hello to that specific person 
+def hello(to="world"):
+    print("Hello", to)
+
+hello( )
+name = input("Enter your name? ")
+hello(name)
+
+#---------------------------------------CALL A FUNCTION IN END----------------------------------------------
+#create a main function and call the mian function in the end 
+
+def main():
+    name = input("Enter your name? ")
+    hi(name)
+
+def hi(to):
+    print("Hi", to)
+
+main()
+
+ 
