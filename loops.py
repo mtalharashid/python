@@ -110,5 +110,3 @@ students = [
 for student in students:
     print("Student Name:", student["name"], "Age:", student["age"])
 
-# 3:45:00 python
-
