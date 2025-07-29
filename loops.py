@@ -93,6 +93,22 @@ for student in Students:
     print("Student in the list:", student) 
     
 
+#----------------------Dictionary in Python-----------------------
 
-# 3:26:00 py
+
+for i in range(len(Students)):
+    print("Student at index", i + 1, "is", Students[i])
+
+
+students = [
+    {"name": "Ali", "age": 20},
+    {"name": "Ahmed", "age": 22},
+    {"name": "Sara", "age": 19},
+    {"name": "Fatima", "age": 21}
+]
+
+for student in students:
+    print("Student Name:", student["name"], "Age:", student["age"])
+
+# 3:45:00 python
 
