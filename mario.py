@@ -11,7 +11,7 @@ def print_column(height):
 def print_row(width):
     print("#" * width)
               
-main()
+# main()
 
 
 #--------------------- Create a square using loops ---------------------#
@@ -36,6 +36,39 @@ def mario_square(size):
         # print a row of hashes
         print("*" * size)
 
-mario()
+# mario()
 
-#4:05:00 python
+
+
+#----------------------- Python Loops -----------------------#
+
+#-------------- Print Odd Numbers --------------#
+for i in range(1,21):
+    if i % 2 == 0:
+        print(i, end=" ")
+    
+print("\n---------------------------------------------------------------------------")
+
+#-------------- sum of numbers divided by 3 or 5 --------------#
+total = 0
+for i in range(1, 50):
+    if i % 3 == 0 or i % 5 == 0:
+        print(i)
+        total += i
+print("Total:", total)
+
+#------------------------- Prime Numbers -------------------------#
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_numbers():
+    for i in range(1, 50):
+        if is_prime(i):
+            print(i)
+prime_numbers()   
