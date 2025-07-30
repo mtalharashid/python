@@ -43,19 +43,27 @@ def mario_square(size):
 #----------------------- Python Loops -----------------------#
 
 #-------------- Print Odd Numbers --------------#
-for i in range(1,21):
-    if i % 2 == 0:
-        print(i, end=" ")
-    
-print("\n---------------------------------------------------------------------------")
+
+def odd_num():
+    for i in range(1,21):
+        if i % 2 == 0:
+            print(i, end=" ")
+        
+        print("\n---------------------------------------------------------------------------")
+
+# odd_num()
 
 #-------------- sum of numbers divided by 3 or 5 --------------#
-total = 0
-for i in range(1, 50):
-    if i % 3 == 0 or i % 5 == 0:
-        print(i)
-        total += i
-print("Total:", total)
+
+def sum():
+    total = 0
+    for i in range(1, 50):
+        if i % 3 == 0 or i % 5 == 0:
+            print(i)
+            total += i
+    print("Total:", total)
+
+# sum()
 
 #------------------------- Prime Numbers -------------------------#
 
@@ -71,4 +79,28 @@ def prime_numbers():
     for i in range(1, 50):
         if is_prime(i):
             print(i)
-prime_numbers()   
+# prime_numbers()   
+
+
+#----------------------- Create Table -----------------------#
+
+def table():
+    number = int(input("Enter a number to create a multiplication table: "))
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
+        
+# table()
+
+#----------------------- vowel --------------------------
+
+def vowels():
+    letters = ["a","e","i","o","u"]
+    get_string = input("Enter a string: ")
+    
+    for i in get_string:
+        for j in letters:
+            if i == j:    
+                print(i)
+    
+vowels()       
+     
