@@ -1,4 +1,6 @@
 # ------------------------------------- Google Weather API -----------------------------------
+# get a city name from user and show the weather report of that specific city 
+
 import requests
 
 city = input("Enter the city name: ")
