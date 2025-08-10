@@ -11,12 +11,12 @@
 
 students = []
 
-with open("name.csv") as file:
-    for line in file:
-        name, house = line.rstrip().split(",")
-        student = {} # create an empty dictionary 
-        student = {"name": name, "house": house}
-        students.append(student)
+# with open("name.csv") as file:
+#     for line in file:
+#         name, house = line.rstrip().split(",")
+#         student = {} # create an empty dictionary 
+#         student = {"name": name, "house": house}
+#         students.append(student)
         
         
 # def get_name(student): #to sort student dict by name 
@@ -25,7 +25,17 @@ with open("name.csv") as file:
 # def get_house(student): #to get sorted by house
 #     return student["house"]
         
-for student in sorted(students, key=lambda student: student["name"]): #lambda use for unknown function 
-    print(f"{student['name']} is in {student['house']}")
-    
-# 8:01 use the csv library from python
+# for student in sorted(students, key=lambda student: student["name"]): #lambda use for unknown function 
+#     print(f"{student['name']} is in {student['house']}")
+
+# ---------------------------------- Using CSV Library ------------------------------
+
+import csv
+
+with open("name.csv") as file:
+    reader = csv.reader(file)
+    for name, home in reader:
+        students.append({"name": name, "home": home})
+
+for student in sorted(students, key=lambda student: student["name"]):
+    print(f"{student['name']} is in {student['home']}")
