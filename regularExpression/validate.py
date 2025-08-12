@@ -8,7 +8,7 @@ email = input("Enter your email: ").strip()
 # if (username) and ("." in domain):
 #     print("valid")
 # else:
-#     print("invlid")
+#     print("invalid")
 
 # Python library to check regular expression
 
@@ -17,4 +17,4 @@ import re
 if re.search(r".+@.+\.", email):
     print("valid")
 else:
-    print("invlaid")
+    print("invalid")
