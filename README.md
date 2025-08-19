@@ -106,9 +106,9 @@ else:
 
 ### Checking Customer Usernames
 
-## Ensured that customer usernames meet specific rules (like no spaces or special characters).
+ Ensured that customer usernames meet specific rules (like no spaces or special characters).
 
-# Example pattern:
+## Example pattern:
 ```
 import re
 
