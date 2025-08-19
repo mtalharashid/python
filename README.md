@@ -69,12 +69,12 @@ Through this project, I have practiced and explored the following Python concept
 git clone https://github.com/mtalharashid/python
 ```
 
-### Navigate to the project folder:
+2. Navigate to the project folder:
 ```
 cd python-learning-project
 ```
 
-### Run any Python file to explore the code:
+3. Run any Python file to explore the code:
 ```
 python calculator.py
 ```
