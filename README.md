@@ -119,3 +119,33 @@ if re.search(r".+@.+\.", email):
 else:
     print("invalid")
 ```
+
+## Unit Testing
+
+This project includes a Unit Testing folder where I write automated tests to ensure the correctness of functions. Unit tests help catch errors early and make the code more reliable.
+
+Testing the find_square Function
+
+I created tests for a simple function find_square(number) that returns the square of a number. The tests include:
+Positive Numbers: Check if the function correctly calculates the square.
+Negative Numbers: Ensure the function correctly handles negative inputs.
+
+Example:
+```
+import unittest
+from my_module import find_square
+
+class TestFindSquare(unittest.TestCase):
+    
+    def test_positive_numbers(self):
+        self.assertEqual(find_square(5), 25)
+        self.assertEqual(find_square(10), 100)
+    
+    def test_negative_numbers(self):
+        self.assertEqual(find_square(-3), 9)
+        self.assertEqual(find_square(-7), 49)
+
+if __name__ == "__main__":
+    unittest.main()
+```
+
