@@ -67,29 +67,28 @@ Through this project, I have practiced and explored the following Python concept
 
 ```bash
 git clone https://github.com/mtalharashid/python
-
+```
 
 ### Navigate to the project folder:
-
+```
 cd python-learning-project
-
+```
 
 ### Run any Python file to explore the code:
-
+```
 python calculator.py
-
-
+```
+```
 Regular Expressions (Regex)
-
 In this project, I explored Regular Expressions (Regex), a powerful tool for pattern matching in strings. Regex helps to validate, search, and manipulate text in Python.
 
 Use Cases in This Project
 
 Validating Twitter Handles
 ```
-### Validate Twitter link
+## Validate Twitter link
 Ensured that Twitter usernames follow the correct format, e.g., starting with @ and containing only allowed characters.
-
+Example
 ```
 import re
 url = input("twitter url? ").strip()
@@ -98,10 +97,10 @@ print(f"username: {username}")
 
 ```
 
-### Validating Emails
+## Validating Emails
 Checked if user emails are valid before saving or processing them.
 
-# Example:
+Example:
 ```
 import re
 email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
@@ -111,11 +110,11 @@ else:
     print("Invalid Email")
 ```
 
-#### Checking Customer Usernames
+## Checking Customer Usernames
 
- Ensured that customer usernames meet specific rules (like no spaces or special characters).
+Ensured that customer usernames meet specific rules (like no spaces or special characters).
 
-# Example:
+Example:
 ```
 import re
 if re.search(r".+@.+\.", email):
