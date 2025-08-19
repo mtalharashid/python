@@ -8,7 +8,7 @@ my coding skills.
 The project contains multiple Python files and folders. Each Python file focuses on a specific concept or set of exercises. Some folders contain additional resources or organized code snippets, which I will explain in detail later.
 
 Example structure:
-
+```
 PYTHON/
 │
 ├── numpy/ # Practice with NumPy library
@@ -30,10 +30,7 @@ PYTHON/
 ├── readCSV.py # Reading and processing CSV files
 ├── weather.py # Example with APIs or external data
 └── README.md # This file
-
-
----
-
+```
 ## Concepts Learned
 
 Through this project, I have practiced and explored the following Python concepts:
