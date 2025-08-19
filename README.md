@@ -87,14 +87,21 @@ Use Cases in This Project
 
 Validating Twitter Handles
 ```
+### Validate Twitter link
+Ensured that Twitter usernames follow the correct format, e.g., starting with @ and containing only allowed characters.
 
-## Ensured that Twitter usernames follow the correct format, e.g., starting with @ and containing only allowed characters.
+```
+import re
+url = input("twitter url? ").strip()
+username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
+print(f"username: {username}")
 
-## Validating Emails
+```
 
-## Checked if user emails are valid before saving or processing them.
+### Validating Emails
+Checked if user emails are valid before saving or processing them.
 
-## Example pattern:
+# Example:
 ```
 import re
 email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
@@ -104,16 +111,13 @@ else:
     print("Invalid Email")
 ```
 
-### Checking Customer Usernames
+#### Checking Customer Usernames
 
  Ensured that customer usernames meet specific rules (like no spaces or special characters).
 
-## Example pattern:
+# Example:
 ```
 import re
-
-import re
-
 if re.search(r".+@.+\.", email):
     print("valid")
 else:
