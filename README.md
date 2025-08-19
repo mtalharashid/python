@@ -86,6 +86,7 @@ In this project, I explored Regular Expressions (Regex), a powerful tool for pat
 Use Cases in This Project
 
 Validating Twitter Handles
+```
 
 ## Ensured that Twitter usernames follow the correct format, e.g., starting with @ and containing only allowed characters.
 
@@ -94,21 +95,21 @@ Validating Twitter Handles
 ## Checked if user emails are valid before saving or processing them.
 
 ## Example pattern:
-
+```
 import re
 email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
 if re.match(email_pattern, "example@gmail.com"):
     print("Valid Email")
 else:
     print("Invalid Email")
-
+```
 
 ## Checking Customer Usernames
 
 ## Ensured that customer usernames meet specific rules (like no spaces or special characters).
 
 ## Example pattern:
-
+```
 import re
 
 import re
@@ -117,3 +118,4 @@ if re.search(r".+@.+\.", email):
     print("valid")
 else:
     print("invalid")
+```
