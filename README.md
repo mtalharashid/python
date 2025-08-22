@@ -75,16 +75,14 @@ cd python-learning-project
 ```
 python calculator.py
 ```
-```
+
 Regular Expressions (Regex)
-In this project, I explored Regular Expressions (Regex), a powerful tool for pattern matching in strings. Regex helps to validate, search, and manipulate text in Python.
+I also explored Regular Expressions (Regex), a powerful tool for pattern matching in strings. Regex helps to validate, search, and manipulate text in Python.
 
-Use Cases in This Project
+## Use Cases in This Project
 
-Validating Twitter Handles
-```
-## Validate Twitter link
-Ensured that Twitter usernames follow the correct format, e.g., starting with @ and containing only allowed characters.
+### Validate Twitter link
+Ensured that Twitter usernames follow the correct format.
 Example
 ```
 import re
@@ -94,7 +92,7 @@ print(f"username: {username}")
 
 ```
 
-## Validating Emails
+### Validating Emails
 Checked if user emails are valid before saving or processing them.
 
 Example:
@@ -107,7 +105,7 @@ else:
     print("Invalid Email")
 ```
 
-## Checking Customer Usernames
+### Checking Customer Usernames
 
 Ensured that customer usernames meet specific rules (like no spaces or special characters).
 
