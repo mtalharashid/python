@@ -1,4 +1,4 @@
-# Python Learning Project
+# Python + Data Analysis - Learning Project
 
 This repository contains a collection of Python exercises and practice files that I created while learning Python. The purpose of this project is to practice basic Python concepts, experiment with different libraries, and improve 
 my coding skills.
